@@ -1,0 +1,409 @@
+* {
+	box-sizing: border-box;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	scroll-behavior:smooth
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:visited {
+	color: #ffffff;
+}
+
+/**/
+#main-container {
+	width: 100%;
+	height: auto;
+/*	border: 1px solid red;*/
+}
+.glb-container {
+	width: 100%;
+	height: auto;
+/*	border: 1px solid red;*/
+	color: #ffffff;
+	background-color: #000001;
+}
+.glb-button {
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-family: "Consolas";
+	padding: 5px;
+}
+.glb-button:hover {
+	transition: 0.3s linear;
+	background-color: #66fcf1;
+	border: 1px solid transparent;
+	color: #000001;
+	cursor: pointer;
+}
+.glb-button:not(:hover) {
+	transition: 0.2s linear;
+	border-radius: 0px;
+}
+.glb-txt-headsection {
+	color: #ffffff;
+	font-family: "Trebuchet MS";
+	font-size: 32px;
+}
+.glb-txt-description {
+	color: #d0d0d0;
+/*	font-family: "Bebas Neue", sans-serif;*/
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: 1.25;
+}
+/* 1 - Bilah Navigasi */
+#container-navbar {
+	width: 100%;
+	height: 72px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+#navbar-left {
+/*	border: 1px solid green;*/
+	width: auto;
+	height: auto;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 14px;
+	font-weight: 750;
+	text-align: center;
+	letter-spacing: 3px;
+	padding: 5px;
+}
+#navbar-right {
+/*	border: 1px solid green;*/
+	width: auto;
+	padding: 5px;
+}
+#navbar-right ul {
+	display: inline-flex;
+	list-style: none;
+}
+#navbar-right ul li {
+	width: 110px;
+	height: 100%;
+	text-align: center;
+	border: 2px solid transparent;
+	padding: 10px 10px;
+}
+#navbar-right ul li:hover {
+    transition: 0.1s linear;
+	border-bottom: 2px solid #66fcf1;
+    box-shadow: 0px 1px 0px 0px #66fcf1;
+}
+#navbar-right ul li a {
+	color: #ffffff;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+/* 2 - Beranda */
+#container-beranda {
+	width: 100%;
+	height: 560px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: right;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.wrapper-Beranda-left, .wrapper-Beranda-right {
+	width: 49%;
+	height: auto;
+/*	border: 1px solid red;*/
+}
+#txt-Beranda-1 {
+	color: #ffffff;
+	font-family: "Consolas";
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#btn-Beranda-1 {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+}
+#btn-Beranda-1:hover {
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	cursor: pointer;
+}
+#txt-Beranda-2 {
+	color: #66fcf1;
+	font-family: serif;
+	font-size: 58px;
+	margin-bottom: 10px;
+}
+
+/* 3 - Tentang */
+#container-tentang {
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+	justify-content: space-between;
+/*	align-items: center;*/
+	background-image: url('../images/background-2.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.wrapper-Tentang-left, .wrapper-Tentang-right {
+	width: 49%;
+	height: auto;
+/*	border: 1px solid red;*/
+}
+#btn-Tentang-1 {
+	width: 100px;
+	height: auto;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+/* 4 - Layanan */
+#container-layanan {
+	display: block;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.wrapper-Layanan-head {
+/*	border: 1px solid red;*/
+	width: 100%;
+	height: auto;
+}
+#txt-Layanan-1 {
+	text-align: center;
+}
+.wrapper-Layanan-body {
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+/*	border: 1px solid red;*/
+	justify-content: space-between;
+	padding: 3%;
+}
+.box-Layanan-item {
+	width: 20%;
+	height: auto;
+	display: block;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background-color: #101010;
+	padding: 15px;
+}
+.box-Layanan-item:hover {
+	transition: 0.3s linear;
+	border: 1px solid #66fcf1;
+	cursor: pointer;
+}
+.txt-Layanan-title {
+	font-family: "Consolas";
+	font-size: 18px;
+	font-weight: bold;
+	color: #66fcf1;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.txt-Layanan-desc {
+	font-family: sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#btn-Layanan-order {
+	width: 100px;
+	height: auto;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+/* 5 - Keunggulan */
+#container-keunggulan {
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+/*	align-items: center;*/
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: inline-flex;
+}
+.wrapper-Keunggulan-left, .wrapper-Keunggulan-right {
+	width: 49%;
+	height: auto;
+/*	border: 1px solid red;*/
+}
+
+/* 6 - Testimoni */
+#container-testimoni {
+	width: 100%;
+	height: auto;
+	display: block;
+	align-items: center;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 20px;
+	page-break-after: 20px;
+}
+.wrapper-Testimoni-head	{
+	width: 100%;
+	height: auto;
+/*	border: 1px solid red;*/
+}
+#txt-Testimoni-1 {
+	text-align: center;
+}
+.wrapper-Testimoni-body {
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+	justify-content: space-between;
+/*	align-items: center;*/
+/*	border: 1px solid red;*/
+	padding: 3%;
+}
+.box-Testimoni-item	{
+	width: 20%;
+	height: auto;
+	display: block;
+	border: 1px solid transparent;
+	background-color: #101010;
+	border-radius: 10px;
+	padding: 15px;
+}
+.box-Testimoni-item:hover {
+	transition: 0.3s linear;
+	border: 1px solid #66fcf1;
+}
+.img-Testimoni {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #66fcf1;
+	border-radius: 75px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+#img-Testimoni-1 {
+	background-image: url('../images/people-1.jpg');
+}
+#img-Testimoni-2 {
+	background-image: url('../images/people-2.jpg');
+}
+#img-Testimoni-3 {
+	background-image: url('../images/people-3.jpg');
+}
+#img-Testimoni-4 {
+	background-image: url('../images/people-4.jpg');
+}
+.txt-Testimoni-name {
+	font-family: "Consolas";
+	font-size: 18px;
+	font-weight: bold;
+	color: #66fcf1;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.txt-Testimoni-quote {
+	font-family: serif;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+/* 7 - Tawaran */
+#container-tawaran {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	align-items: center;
+	background-image: url('../images/background-2.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.txt-Tawaran-1 {
+	font-family: serif;
+	font-size: 42px;
+	text-align: center;
+
+}
+#btn-Tawaran-order {
+	width: 200px;
+	height: 50px;	
+	font-size: 20px;
+}
+#btn-Tawaran-order:hover {
+	transition: 0.3s linear;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	cursor: pointer;
+}
+
+/* 8 - Kaki (Footer) */
+#container-footer {
+	width: 100%;
+	height: auto;
+	display: block;
+	justify-content: space-between;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.wrapper-Footer-body {
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.section-Footer {
+	width: 23%;
+	height: auto;
+	display: block;
+/*	border: 1px solid green;*/
+	padding: 5px;
+}
+.txt-Footer-title {
+	font-family: "Consolas";
+	font-size: 18px;
+	color: #66fcf1;
+	letter-spacing: 1px;
+}
+.txt-Footer-desc {
+/*	font-family: "Bebas Neue", sans-serif;*/
+	font-family: sans-serif;
+	font-size: 14px;
+}
+.decor-Footer-line {
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
